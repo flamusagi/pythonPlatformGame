@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.9" tiledversion="1.9.2" orientation="orthogonal" renderorder="right-down" width="15" height="15" tilewidth="50" tileheight="50" infinite="0" nextlayerid="16" nextobjectid="31">
+ <tileset firstgid="1" name="grass" tilewidth="50" tileheight="50" tilecount="1" columns="1">
+  <image source="../png/grass.png" width="50" height="50"/>
+ </tileset>
+ <tileset firstgid="2" name="dirt" tilewidth="50" tileheight="50" tilecount="1" columns="1">
+  <image source="../png/dirt.png" width="50" height="50"/>
+ </tileset>
+ <tileset firstgid="3" name="test" tilewidth="50" tileheight="50" tilecount="2" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="50" height="50" source="../png/dirt.png"/>
+  </tile>
+  <tile id="1">
+   <image width="50" height="50" source="../png/grass.png"/>
+  </tile>
+ </tileset>
+ <imagelayer id="2" name="background">
+  <image source="../png/level1.png" width="750" height="750"/>
+ </imagelayer>
+ <objectgroup id="3" name="lava">
+  <object id="7" x="323" y="269">
+   <point/>
+  </object>
+  <object id="8" x="371" y="268">
+   <point/>
+  </object>
+  <object id="9" x="424" y="268">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="10" name="enemy">
+  <object id="20" x="323" y="659">
+   <point/>
+  </object>
+  <object id="21" x="574" y="261">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="11" name="platformx">
+  <object id="22" x="374" y="213"/>
+  <object id="23" x="124" y="112"/>
+ </objectgroup>
+ <objectgroup id="12" name="platformy">
+  <object id="24" x="174" y="212"/>
+  <object id="25" x="75" y="363"/>
+  <object id="28" x="674" y="615"/>
+ </objectgroup>
+ <objectgroup id="13" name="thorn">
+  <object id="29" x="162" y="379"/>
+  <object id="30" x="263" y="378"/>
+ </objectgroup>
+ <objectgroup id="5" name="switch">
+  <object id="10" x="676" y="222"/>
+ </objectgroup>
+ <objectgroup id="6" name="coin">
+  <object id="11" x="375" y="127">
+   <ellipse/>
+  </object>
+  <object id="13" x="525" y="425">
+   <ellipse/>
+  </object>
+  <object id="14" x="524" y="677">
+   <ellipse/>
+  </object>
+ </objectgroup>
+ <objectgroup id="7" name="door">
+  <object id="15" x="71" y="24"/>
+  <object id="16" x="71" y="73"/>
+ </objectgroup>
+ <objectgroup id="8" name="doo">
+  <object id="18" x="25" y="23"/>
+ </objectgroup>
+ <objectgroup id="9" name="exit">
+  <object id="19" x="24" y="73"/>
+ </objectgroup>
+ <layer id="14" name="grass" width="15" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgYwDhA9lIboPuDGH8x4lHHiAUPFMDmloF2EwwMJreAAL6wIoQBJnwAJA==
+  </data>
+ </layer>
+ <layer id="15" name="dirt" width="15" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFlAAWAnx8gBkLHgUjDwAAM2QAGA==
+  </data>
+ </layer>
+</map>

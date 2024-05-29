@@ -1,0 +1,122 @@
+<html>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+      <div class="mermaid">
+    
+        classDiagram
+          class Button {
+            clicked : bool
+            image
+            rect
+            draw(screen)
+          }
+          class Coin {
+            image
+            rect
+          }
+          class Complete {
+            all_clear
+            clear_num
+            getClear()
+            is_complete(play, index)
+            is_win()
+            setClear(clear_num)
+          }
+          class Doo {
+            image
+            rect
+          }
+          class Door {
+            image
+            rect
+          }
+          class Enemy {
+            counter : int
+            direction : int
+            height
+            image
+            in_air : bool
+            rect
+            vel_y : int
+            width
+            update(world)
+          }
+          class Exit {
+            image
+            rect
+          }
+          class Ghost {
+            counter : int
+            direction : int
+            height
+            image
+            in_air : bool
+            rect
+            speed_x : int, float
+            speed_y : int
+            vel_y : int
+            width
+            update(world)
+          }
+          class Lava {
+            image
+            rect
+          }
+          class Level {
+            level
+            max_levels
+            getLevel()
+            getMaxLevel()
+            setLevel(level, max_levels)
+          }
+          class Platform {
+            image
+            move_counter : int
+            move_direction : int
+            move_x
+            move_y
+            rect
+            update()
+          }
+          class Player {
+            counter : int
+            dead_image
+            direction : int
+            height
+            image
+            images_left : list
+            images_right : list
+            in_air : bool
+            index : int
+            jumped : bool
+            rect
+            vel_y : int
+            width
+            animation_effect()
+            control(dx)
+            gravity(dy)
+            update(screen, world, score, game_flag)
+          }
+          class Switch {
+            image
+            rect
+          }
+          class Thorn {
+            image
+            move_counter : int
+            move_direction : int
+            rect
+            update(world)
+          }
+          class World {
+            tile_list : list
+            draw(screen)
+          }
+          class World {
+            tile_list : list
+            draw(screen)
+          }
+  
+       </div>
+  </body>
+</html>

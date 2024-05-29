@@ -1,0 +1,33 @@
+digraph "packages" {
+rankdir=BT
+charset="utf-8"
+"MapEditer" [color="black", label=<MapEditer>, shape="box", style="solid"];
+"button" [color="black", label=<button>, shape="box", style="solid"];
+"coin" [color="black", label=<coin>, shape="box", style="solid"];
+"enemy" [color="black", label=<enemy>, shape="box", style="solid"];
+"exit" [color="black", label=<exit>, shape="box", style="solid"];
+"instance" [color="black", label=<instance>, shape="box", style="solid"];
+"lava" [color="black", label=<lava>, shape="box", style="solid"];
+"level" [color="black", label=<level>, shape="box", style="solid"];
+"leveltest" [color="black", label=<leveltest>, shape="box", style="solid"];
+"methods" [color="black", label=<methods>, shape="box", style="solid"];
+"platform" [color="black", label=<platform>, shape="box", style="solid"];
+"player" [color="black", label=<player>, shape="box", style="solid"];
+"setup" [color="black", label=<setup>, shape="box", style="solid"];
+"subworld" [color="black", label=<subworld>, shape="box", style="solid"];
+"switch" [color="black", label=<switch>, shape="box", style="solid"];
+"world" [color="black", label=<world>, shape="box", style="solid"];
+"MapEditer" -> "methods" [arrowhead="open", arrowtail="none"];
+"MapEditer" -> "setup" [arrowhead="open", arrowtail="none"];
+"instance" -> "button" [arrowhead="open", arrowtail="none"];
+"instance" -> "coin" [arrowhead="open", arrowtail="none"];
+"instance" -> "setup" [arrowhead="open", arrowtail="none"];
+"leveltest" -> "methods" [arrowhead="open", arrowtail="none"];
+"leveltest" -> "player" [arrowhead="open", arrowtail="none"];
+"methods" -> "instance" [arrowhead="open", arrowtail="none"];
+"methods" -> "world" [arrowhead="open", arrowtail="none"];
+"player" -> "instance" [arrowhead="open", arrowtail="none"];
+"player" -> "setup" [arrowhead="open", arrowtail="none"];
+"subworld" -> "instance" [arrowhead="open", arrowtail="none"];
+"world" -> "instance" [arrowhead="open", arrowtail="none"];
+}

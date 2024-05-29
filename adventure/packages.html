@@ -1,0 +1,55 @@
+<html>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+      <div class="mermaid">
+    
+        classDiagram
+          class MapEditer {
+          }
+          class button {
+          }
+          class coin {
+          }
+          class enemy {
+          }
+          class exit {
+          }
+          class instance {
+          }
+          class lava {
+          }
+          class level {
+          }
+          class leveltest {
+          }
+          class methods {
+          }
+          class platform {
+          }
+          class player {
+          }
+          class setup {
+          }
+          class subworld {
+          }
+          class switch {
+          }
+          class world {
+          }
+          MapEditer --> methods
+          MapEditer --> setup
+          instance --> button
+          instance --> coin
+          instance --> setup
+          leveltest --> methods
+          leveltest --> player
+          methods --> instance
+          methods --> world
+          player --> instance
+          player --> setup
+          subworld --> instance
+          world --> instance
+  
+       </div>
+  </body>
+</html>
